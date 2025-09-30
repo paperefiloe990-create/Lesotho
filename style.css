@@ -1,0 +1,84 @@
+/* Reset & Base */
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%;scroll-behavior:smooth}
+body{font-family:'Montserrat',Arial,sans-serif;color:#222;line-height:1.7;letter-spacing:.25px;
+  background:linear-gradient(160deg,#f0faff 0%,#d9f2ff 40%,#b9e6ff 100%) fixed}
+
+/* Typography */
+h1,h2,h3{font-family:'Libre Baskerville',serif;color:#003459;margin-bottom:.6rem}
+h1.site-title{font-size:clamp(1.8rem,3vw,2.8rem);text-align:center;text-shadow:2px 2px 5px rgba(0,0,0,.15)}
+p{margin-bottom:1rem;font-size:1.05rem;color:#333}
+.container{max-width:1100px;margin:0 auto;padding:1rem}
+
+/* Header & Nav */
+.site-header{background:linear-gradient(135deg,#0077b6,#0096c7);color:#fff;padding:.9rem 0;position:sticky;top:0;z-index:50;box-shadow:0 3px 10px rgba(0,0,0,.15)}
+.header-inner{display:flex;align-items:center;justify-content:space-between}
+.main-nav ul{list-style:none;display:flex;gap:1.2rem}
+.main-nav a{color:#e6f7ff;text-decoration:none;padding:.5rem .8rem;border-radius:6px;transition:.3s}
+.main-nav a:hover{background:rgba(255,255,255,.15);transform:translateY(-2px)}
+.main-nav a.active{font-weight:700;background:rgba(255,255,255,.25)}
+
+/* Hero */
+.hero{padding:2rem 0}
+.hero-figure{position:relative;max-width:950px;margin:0 auto}
+.hero-img{width:100%;border-radius:14px;transition:.5s}
+.hero-img:hover{transform:scale(1.03);box-shadow:0 16px 35px rgba(0,0,0,.25)}
+.hero-caption{position:absolute;bottom:15px;left:50%;transform:translateX(-50%);
+  background:rgba(0,0,0,.6);color:#fff;padding:.7rem 1.2rem;border-radius:10px;font-size:1rem;letter-spacing:.5px}
+
+/* Pull Quote & Buttons */
+.pull-quote{font-style:italic;text-align:right;margin:1.5rem 0;color:#444;font-size:1.1rem;border-right:4px solid #0077b6;padding-right:.8rem}
+.btn{display:inline-block;background:#0077b6;color:#fff;padding:.7rem 1.2rem;border-radius:10px;text-decoration:none;transition:.25s}
+.btn:hover{transform:translateY(-3px) scale(1.03);background:#005f8a}
+.btn.ghost{background:0;border:2px solid #0077b6;color:#0077b6}
+.btn.ghost:hover{background:#0077b6;color:#fff}
+.btn.small{padding:.35rem .7rem;font-size:.9rem}
+
+/* About Page */
+.float-right{float:right;width:40%;margin-left:1rem;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,.1)}
+.fact{background:#fffbe6;border-left:6px solid #ffd166;padding:1rem;margin-top:1.2rem;border-radius:6px}
+.fun-fact p.hidden{display:none}
+.fun-fact p{margin-top:.8rem}
+.hidden { display: none; }
+
+
+/* Gallery */
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.2rem;padding:2rem 0}
+.gallery-item{background:#fff;padding:.5rem;border-radius:10px;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,.08);transition:.3s}
+.gallery-item:hover{transform:scale(1.02);box-shadow:0 12px 30px rgba(0,0,0,.15)}
+.gallery-img{width:100%;border-radius:8px;cursor:zoom-in}
+.gallery-item figcaption{padding:.5rem 0;text-align:center;font-size:.95rem;color:#333}
+.gallery-img { transition: transform 0.3s ease; }
+
+
+/* Lightbox */
+.lightbox{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.75);z-index:80}
+.lightbox.hidden{display:none}
+.lightbox-inner{max-width:90%;max-height:85%;position:relative}
+.lightbox img{max-width:100%;max-height:75vh;border-radius:8px}
+.lightbox-close{position:absolute;right:-10px;top:-10px;background:#0077b6;border:none;color:#fff;font-size:1.4rem;
+  padding:.3rem .6rem;border-radius:50%;cursor:pointer}
+
+/* Footer */
+.site-footer{padding:1.5rem 0;text-align:center;background:linear-gradient(180deg,#e8faff,#cdefff);margin-top:2rem;font-size:.95rem;color:#003459}
+
+/* Responsive */
+@media(max-width:900px){.float-right{float:none;width:100%;margin:0 0 1rem}}
+/* --- Welcome & Slideshow Additions --- */
+.welcome-tools{margin:2rem 0;text-align:center}
+.slideshow{margin:2rem auto;text-align:center}
+.slides{position:relative;max-width:700px;margin:0 auto;overflow:hidden;border-radius:12px}
+.slide{display:none;width:100%;border-radius:12px;transition:opacity .5s ease}
+.slide.active{display:block}
+.slide-controls{margin-top:1rem}
+.weather-widget ul {
+  display:inline-block;
+  text-align:left;
+  background:rgba(255,255,255,0.85);
+  padding:1rem 1.5rem;
+  border-radius:10px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+.weather-widget li { margin:0.4rem 0; }
+
+

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Welcome to Lesotho!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-home">
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="site-title">Welcome to <span id="dest-name">Lesotho</span>!</h1>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <figure class="hero-figure">
+        <img src="c:\School_Files\PapeRefiloe[9091019536]\Lesotho landscape.png" alt="Lesotho landscape" class="hero-img">
+        <figcaption class="hero-caption">Discover the Mountain Kingdom of <strong>Lesotho</strong></figcaption>
+      </figure>
+    </section>
+    <!-- Live Weather Widget -->
+    <section class="container weather-widget">
+      <h2>Current Weather in Lesotho</h2>
+      <p id="weather-info">Loading weather...</p>
+    </section>
+
+
+    <!--Background Color Button -->
+<section class="container welcome-tools">
+  <h2 id="dynamic-welcome"></h2>
+  <button id="bg-btn" class="btn small">Change Background Color</button>
+</section>
+
+<!-- Slideshow -->
+<section class="container slideshow">
+  <div class="slides">
+    <img src="c:\School_Files\PapeRefiloe[9091019536]\slide1.jpg" class="slide active" alt="Lesotho slide 1">
+    <img src="c:\School_Files\PapeRefiloe[9091019536]\slide2.jpg" class="slide" alt="Lesotho slide 2">
+    <img src="c:\School_Files\PapeRefiloe[9091019536]\slide3.jpg" class="slide" alt="Lesotho slide 3">
+  </div>
+  <div class="slide-controls">
+    <button id="prev" class="btn small">Prev</button>
+    <button id="next" class="btn small">Next</button>
+  </div>
+</section>
+
+
+    <!-- Introduction -->
+    <section class="container intro">
+      <h2 class="center">Why Lesotho should be on your list</h2>
+      <p>
+        Lesotho, known as the “Kingdom in the Sky,” offers a breathtaking blend of culture and nature. Surrounded entirely by mountains, the country is a haven for hikers, skiers, and adventure seekers. Visitors can explore villages perched on rolling hills, where traditions are preserved in song, dance, and art. Its rivers, waterfalls, and high-altitude plateaus create landscapes unlike anywhere else in Africa. Rich Basotho culture welcomes travelers with warm hospitality and deep-rooted heritage. Seasonal festivals showcase colorful attire and lively horse riding parades. Outdoor enthusiasts can climb to the highest peak or ski at Afriski Resort. Whether for culture, adventure, or scenery, Lesotho leaves an unforgettable mark.
+      </p>
+
+      <blockquote class="pull-quote">"Lesotho is Africa’s hidden mountain kingdom, waiting to be explored."</blockquote>
+
+      <p>
+        Traveling through Lesotho is a journey through time and altitude. Local markets brim with handwoven blankets and crafts that symbolize identity. Adventure lovers enjoy pony trekking across mountain trails. Families and students will find rich history lessons in royal palaces and ancient rock art. For those seeking peace, the fresh mountain air and calm rivers offer quiet retreats. Every sunrise paints the hills golden, while nights reveal starlit skies untouched by city lights.
+      </p>
+    </section>
+
+    <!-- CTA -->
+    <section class="container cta">
+      <a class="btn" href="about.html">Learn More</a>
+      <a class="btn ghost" href="gallery.html">See Photos</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Explore Lesotho • Developed By KayCee</p>
+    </div>
+  </footer>
+
+  <script src="script-index.js"></script>
+
+</body>
+</html>

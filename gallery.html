@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Lesotho in Pictures</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-gallery">
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="site-title">Lesotho in Pictures</h1>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html" class="active">Gallery</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Filter Buttons -->
+    <div class="container gallery-filters" style="text-align:center;margin:1rem 0;">
+      <button class="btn small filter-btn" data-category="all">Show All</button>
+      <button class="btn small filter-btn" data-category="mountains">Show Mountains</button>
+      <button class="btn small filter-btn" data-category="culture">Show Culture</button>
+    </div>
+
+    <section class="container gallery-grid">
+      <figure class="gallery-item left" data-category="mountains">
+        <img src="c:\School_Files\PapeRefiloe[9091019536]\Maletsunyane Falls1.jpg" alt="Maletsunyane Falls" class="gallery-img" data-caption="Maletsunyane Falls">
+        <figcaption>Maletsunyane Falls</figcaption>
+      </figure>
+
+      <figure class="gallery-item center" data-category="culture">
+        <img src="c:\School_Files\PapeRefiloe[9091019536]\Basotho Pony Trekking1.jpg" alt="Basotho Pony Trekking" class="gallery-img" data-caption="Basotho Pony Trekking">
+        <figcaption>Basotho Pony Trekking</figcaption>
+      </figure>
+
+      <figure class="gallery-item right" data-category="mountains">
+        <img src="c:\School_Files\PapeRefiloe[9091019536]\Katse Dam.jpg" alt="Katse Dam" class="gallery-img" data-caption="Katse Dam">
+        <figcaption>Katse Dam</figcaption>
+      </figure>
+
+      <figure class="gallery-item" data-category="mountains">
+        <img src="c:\School_Files\PapeRefiloe[9091019536]\Sehlabathebe National Park.jpg" alt="Sehlabathebe National Park" class="gallery-img" data-caption="Sehlabathebe National Park">
+        <figcaption>Sehlabathebe National Park</figcaption>
+      </figure>
+
+      <figure class="gallery-item" data-category="mountains">
+        <img src="c:\School_Files\PapeRefiloe[9091019536]\Afriski Resort.jpg" alt="Afriski Resort" class="gallery-img" data-caption="Afriski Resort">
+        <figcaption>Afriski Resort</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <div id="lightbox" class="lightbox hidden">
+    <div class="lightbox-inner">
+      <button id="close-lightbox" class="lightbox-close">✕</button>
+      <img id="lightbox-img" src="" alt="Expanded">
+      <p id="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year3"></span> Explore Lesotho</p>
+    </div>
+  </footer>
+
+  <script src="script-gallery.js"></script>
+
+
+</body>
+</html>
